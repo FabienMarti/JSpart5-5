@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 5</title>
+  </head>
+
+  <body>
+    <p>
+      Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un
+      typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl. Le
+      langage Python est placé sous une licence libre proche de la licence BSD et fonctionne sur la plupart des plates-formes informatiques, des smartphones aux ordinateurs centraux, de Windows à Unix
+      avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des
+      outils de haut niveau et une syntaxe simple à utiliser.
+      Il est également apprécié par certains pédagogues qui y trouvent un langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet une initiation aisée aux concepts de base de la
+      programmation.
+    </p>
+    <button id="b1" type="button" onclick='change(0);'>Rose</button>
+    <button id="b2" type="button" onclick='change(1);'>Bleu</button>
+    <button id="b3" type="button" onclick='change(2);'>Violet</button>
+    <button id="b4" type="button" onclick='change(3);'>Gras</button>
+    <button id="b5" type="button" onclick='change(4);'>Italique</button>
+
+    <script>
+      function change(param) {
+        switch (param) {
+          case 0:
+            document.getElementById('b1').style.color = 'pink';
+            break;
+          case 1:
+            document.getElementById('b2').style.color = 'blue';
+            break;
+          case 2:
+            document.getElementById('b3').style.color = 'purple';
+            break;
+          case 3:
+            document.getElementById('b4').style.fontWeight = '900';
+            break;
+          case 4:
+            document.getElementById('b5').style.fontStyle = 'italic';
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+
+</html>
